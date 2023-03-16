@@ -1,8 +1,8 @@
 
 const pageContainer = document.querySelector('body > app-root > app-page > div > div.page__container > div > div > div > div > app-group-page > div > div > div.columns__wrap.columns__wrap--left > app-lessons-list > nav > div');
-const allLessonsElement = document.querySelector('body > app-root > app-page > div > div.page__container > div > div > div > div > app-group-page > div > div > div.columns__wrap.columns__wrap--left > app-lessons-list > nav > app-lessons-timeline > ul > li:nth-child(38) > span').innerHTML;
-const lessonLearnedElement = document.querySelector('body > app-root > app-page > div > div.page__container > div > div > div > div > app-group-page > div > div > div.columns__wrap.columns__wrap--left > app-lessons-list > nav > app-lessons-timeline > ul > li:nth-child(9) > a').innerHTML;
-const allHomeworkCount = document.querySelector('body > app-root > app-page > div > div.page__container > div > div > div > div > app-group-page > div > div > div.columns__wrap.columns__wrap--right > app-rating-widget > app-widget-table > table > tbody > a:nth-child(7) > td > div > div > span:nth-child(1)').innerHTML;
+let allLessonsElement = document.querySelector('body > app-root > app-page > div > div.page__container > div > div > div > div > app-group-page > div > div > div.columns__wrap.columns__wrap--left > app-lessons-list > nav > app-lessons-timeline > ul > li:nth-child(38) > span').innerHTML;
+let lessonLearnedElement = document.querySelector('body > app-root > app-page > div > div.page__container > div > div > div > div > app-group-page > div > div > div.columns__wrap.columns__wrap--left > app-lessons-list > nav > app-lessons-timeline > ul > li:nth-child(9) > a').innerHTML;
+let allHomeworkCount = document.querySelector('body > app-root > app-page > div > div.page__container > div > div > div > div > app-group-page > div > div > div.columns__wrap.columns__wrap--right > app-rating-widget > app-widget-table > table > tbody > a:nth-child(8) > td > div > div > span:nth-child(1)').innerHTML;
 const newElement = document.createElement('section');
 const lessonsLeft = allLessonsElement - lessonLearnedElement;
 const listElements = [
@@ -10,8 +10,8 @@ const listElements = [
   {text: 'Пройдено занятий:', element: lessonLearnedElement, state: 'green'},
   {text: 'Осталось занятий:', element: lessonsLeft, state: 'orange'},
   {text: 'Сдано д/з:', element: allHomeworkCount},
-  {text: 'Проверено д/з:', element: allHomeworkCount, state: 'green'},
-  {text: 'На проверке д/з:', element: allHomeworkCount, state: 'orange'},
+  {text: 'Проверено д/з:', element: 7, state: 'green'},
+  {text: 'На проверке д/з:', element: 4, state: 'orange'},
 ];
 
 
